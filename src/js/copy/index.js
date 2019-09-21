@@ -65,11 +65,11 @@ $(function(){
     });
 
 	// $('.ip-list li').each(function(i, e) {
- //        $(this).css({
- //            'transition-delay': 200*i + 'ms',
- //            '-webkit-transition-delay': 200*i + 'ms'
- //        })
- //    });
+    //     $(this).css({
+    //         'transition-delay': 200*i + 'ms',
+    //         '-webkit-transition-delay': 200*i + 'ms'
+    //     })
+    // });
  //    
  	$('.pnav a').bind(_click, function(e) {
         var hash = $(this).attr('href').split('#')[1];

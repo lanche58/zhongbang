@@ -3,7 +3,7 @@ var isMobile = false,
 	w_height = 0,
 	$mtoph = 0;
 
-var $menuBtn = $('.menu-handler'),
+var $menuBtn = $('.menuBtn'),
     $menuBox = $('.menuBox'),
     navItem = 0;
     	
@@ -67,6 +67,52 @@ $(window).resize(function () {
 });
 
 $(function () {
+    if (!isMobile) {
+        $('.header .pro').mouseenter(function() {
+            $('.pull-nav').stop().fadeIn().addClass('active');
+            $(this).addClass('show');
+        });
+        $('.pro-nav-list li').each(function(i, e) {
+            $(this).css({ 'transition-delay': 200*i + 'ms' });
+        });
+        $('.header').mouseleave(function() {
+            $('.pull-nav').stop().fadeOut(function() {
+                $(this).removeClass('active');
+            });
+            $('.header .pro').removeClass('show');
+        });
+    } else {
+        $('.navMobile dd').each(function(i, e) {
+            $(this).css({ 'transition-delay': 300 + 100*i + 'ms' });
+        }); 
+        $('.navMobile dd p a').bind(_click, function (e) {
+            if($(this).parent().next('.mtnav').size() >= 1){
+                if(!$(this).hasClass('act')){
+                    e.preventDefault();
+                    $('.navMobile dd p a').removeClass('act');
+                    $('.mtnav').stop().slideUp(300);
+                    $(this).addClass('act');
+                    $(this).parent().next('.mtnav').stop().slideDown(300);
+                }else{
+                    $(this).removeClass('act');
+                    $(this).parent().next('.mtnav').stop().slideUp(300);
+                }
+            }
+        });
+        $menuBtn.bind(_click, function () {
+            if (navItem == 0) {
+                $(this).addClass("active");
+                $menuBox.show().stop(false,false).animate({top:0}).addClass('show');
+                navItem = 1;
+            } else {
+                $(this).removeClass("active");
+                $menuBox.stop(false,false).animate({top:-100+"%"},function(){
+                    $(this).hide().removeClass('show');
+                });
+                navItem = 0;
+            }
+        });
+    }
 	
 	
 

@@ -1,0 +1,15 @@
+.bread-crumb-nav{
+    height: 48px;
+    padding-top: 12px;
+    background: #fff;
+    line-height: 24px;
+    a{
+        font-size: 12px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $fc1;
+            }
+        }
+    }
+    a, span{ color: $fc3; vertical-align: bottom; }
+}

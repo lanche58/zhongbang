@@ -1,0 +1,35 @@
+.pager-wrap{
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.pager{
+    a{
+        border: 1px solid $fc3;
+        width: 28px;
+        height: 24px;
+        margin: 0 5px;
+        font-size: 12px;
+        color: $fc3;
+        line-height: 22px;
+        &.act{
+            background: $mc1;
+            border-color: $mc1;
+            color: #fff;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1;
+                border-color: $mc1;
+                color: #fff;
+            }
+        }
+    }
+    .arrow{
+        width: 86px;
+    }
+    .page{
+        width: 54px;
+    }
+}

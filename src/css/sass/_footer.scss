@@ -1,0 +1,55 @@
+.footer{
+    background: $mc1;
+    padding: 35px 0 55px;
+    color: #fff;
+    a{
+        color: #fff;
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $fc3;
+                .icon{
+                    border-color: $fc3;
+                }
+            }
+        }
+    }
+    .f-cta{
+        padding-top: 50px - 35px;
+        margin-bottom: 20px;
+    }
+}
+
+.f-cta{
+    p{
+        float: left;
+        margin-right: 50px;
+        line-height: 34px;
+        font-size: 16px;
+    }
+    .icon{
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 10px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        text-align: center;
+        transition: border 300ms;
+    }
+    .icondianhua{
+        font-size: 14px;
+    }
+    .icondizhi{
+        font-size: 18px;
+    }
+}
+
+.f-ma{
+    width: 89px;
+    text-align: center;
+    .pic{
+        height: 89px;
+        margin-bottom: 5px;
+    }
+}

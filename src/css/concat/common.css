@@ -57,9 +57,8 @@ a {
 	left: 0;
 	right: 0;
 	background: #fff;
-	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
-.menuBox {
+/* .menuBox {
 	position: fixed;
 	z-index: 1009;
 	top: 0;
@@ -71,7 +70,7 @@ a {
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	display: none;
-}
+} */
 .menuBlack {
 	position: fixed;
 	z-index: 1008;
@@ -242,7 +241,7 @@ a {
 /* menuBtn end */
 
 /* menuBtn：<div class="menuBtn"><div class="mb"><span class="ml ml-1"></span><span class="ml ml-2"></span></div></div> */
-.menuBtn { position: absolute; z-index: 1012; top: 0; right: 0; width: 60px; height: 60px; display: none; }
+/* .menuBtn { position: absolute; z-index: 1012; top: 0; right: 0; width: 60px; height: 60px; display: none; }
 .menuBtn .mb { position: relative; height: 100%; -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
 .menuBtn .ml { display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
 .menuBtn .ml:before { content: ""; position: absolute; top: 29px; left: 50%; margin-left: -9px; width: 18px; height: 2px; background: #fff; }
@@ -252,7 +251,7 @@ a {
 .menuBtn.active .ml { -webkit-transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
 .menuBtn.active .ml-1 { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 .menuBtn.active .ml-2 { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
-.menuBtn.active .ml:before { -webkit-transform: translateY(0); transform: translateY(0); }
+.menuBtn.active .ml:before { -webkit-transform: translateY(0); transform: translateY(0); } */
 /* menuBtn end */
 
 /* slick */
