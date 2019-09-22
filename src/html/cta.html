@@ -7,6 +7,33 @@
 <div class="container">
     <div class="cta-page">
         <div id="map"></div>
+        <div class="cta2 pw">
+            <ul class="cta-list fib">
+                <li class="ib">
+                    <span class="icon iconfont icondianhua"></span>
+                    <p class="ti">服务热线</p>
+                    <p class="txx">
+                        <a href="tel:02884876116" class="na">前台电话：028-84876116</a><br/>
+                        <a href="tel:02888451919" class="na">销售部电话：028-88451919</a>
+                    </p>
+                </li>
+                <li class="ib">
+                    <span class="icon iconfont icondizhi"></span>
+                    <p class="ti">公司地址</p>
+                    <p class="txx"><a href="#">四川省成都市经济开发区(龙泉驿区)东华路2号</a></p>
+                </li>
+                <li class="ib">
+                    <span class="icon iconfont iconyouxiang"></span>
+                    <p class="ti">电子邮箱</p>
+                    <p class="txx"><a href="#">aimbon@aimbon.com</a></p>
+                </li>
+                <li class="ib">
+                    <span class="icon iconfont iconchangyongtubiao-mianxing-"></span>
+                    <p class="ti">公司传真</p>
+                    <p class="txx">028-84876116</p>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <!-- container -->
@@ -20,7 +47,7 @@
                 var map = new BMap.Map("map");
             var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
             var marker = new BMap.Marker(point, {
-                icon: new BMap.Icon("images/mapi.png", new BMap.Size(86, 86))
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(122, 122))
             })
             map.addOverlay(marker);
             marker.setAnimation(BMAP_ANIMATION_BOUNCE);

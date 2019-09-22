@@ -1,3 +1,88 @@
 #map{
     height: 750px;
+    @media screen and (max-width:1366px) {
+        height: 550px;
+    }
+    @media screen and (max-width:481px) {
+        height: 350px;
+    }
+}
+
+.cta-list{
+    li{
+        width: 22%;
+        margin: 0 1.5%;
+        text-align: center;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon{
+                    background: $mc1;
+                    color: #fff;
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .icon{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 2px solid $mc1;
+        border-radius: 50%;
+        line-height: 56px;
+        color: $mc1;
+        font-size: 24px;
+        transition: 400ms;
+    }
+    .ti{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .txx{
+        margin-top: 20px;
+        font-size: 16px;
+        color: $fc3;
+        line-height: 1.5;
+        a{
+            color: $fc3;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc1;
+                }
+            } 
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ti{
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 47%;
+            margin-bottom: 60px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+        .ti{
+            margin-top: 20px;
+        }
+        .txx{
+            margin-top: 10px;
+        }
+    }
+}
+
+.cta2{
+    padding: 100px 0 120px;
+    @media screen and (max-width:861px) {
+        padding-bottom: 60px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (100 / 600) * 100vw 0 10vw;
+    }
 }
