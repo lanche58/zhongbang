@@ -32,4 +32,14 @@
     .page{
         width: 54px;
     }
+    @media screen and (max-width:641px) {
+        .page{
+            display: none;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .arrow{
+            display: none;
+        }
+    }
 }

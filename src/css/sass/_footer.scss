@@ -15,13 +15,38 @@
     }
     .f-cta{
         padding-top: 50px - 35px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width:1024px) {
+        padding-top: 50px;
+        .pw{
+            display: flex;
+        }
+        .f-cta{
+            padding-top: 0;
+        }
+        .r{
+            margin-left: 20px;
+        }
+        .l{
+            flex: 1;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .f-ma{
+            display: none;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-top: 40px;
+        padding-bottom: 45px;
     }
 }
 
 .f-cta{
     p{
         float: left;
+        margin-bottom: 10px;
         margin-right: 50px;
         line-height: 34px;
         font-size: 16px;
@@ -34,6 +59,7 @@
         height: 34px;
         border-radius: 50%;
         border: 1px solid #fff;
+        line-height: 32px;
         text-align: center;
         transition: border 300ms;
     }
@@ -42,6 +68,25 @@
     }
     .icondizhi{
         font-size: 18px;
+    }
+    @media screen and (max-width:641px) {
+        p{
+            margin-right: 30px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .icon{
+            width: 24px;
+            height: 24px;
+            font-size: 13px;
+            line-height: 22px;
+        }
+        .icondianhua{
+            font-size: 12px;
+        }
+        .icondizhi{
+            font-size: 15px;
+        }
     }
 }
 
