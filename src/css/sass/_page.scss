@@ -74,3 +74,12 @@
 .pro-detail-page{
     padding: 45px 0 120px;
 }
+
+.job-ti{
+    line-height: 1.4;
+    font-size: 30px;
+    color: $fc1;
+    @media screen and (max-width:1366px) {
+        font-size: 24px;
+    }
+}

@@ -2,7 +2,7 @@ a {
 	color: #666;
 }
 .freeTx a{
-	color: #000;
+	color: #666;
 }
 .ly-box {
 	position: fixed;
@@ -20,7 +20,7 @@ a {
 	transition: 600ms;
 }
 .ly-anim .ly-cont {
-	transform: translateX(10%);
+	transform: translateY(10%);
 	opacity: 0;
 	visibility: hidden;
 	transition: 600ms;
