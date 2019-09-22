@@ -1,0 +1,61 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "pro": "act"
+})
+<div class="container">
+    <div class="pro-back">
+        <div class="pw clearfix">
+            <a href="#" class="prev"><span class="icon iconfont iconxiangzuojiantou"></span><span>上一条</span></a>
+            <a href="#" class="next"><span>下一条</span><span class="icon iconfont iconxiangyoujiantou"></span></a>
+            <a href="pro.html" class="back">返回</a>
+        </div>
+    </div>
+    <div class="pw pro-detail-page">
+        <div class="pd-t clearfix">
+            <div class="pro-detail-imgs u-slick">
+                <div class="item"><div class="pai"><img src="img/10.png" alt=""></div></div>
+                <div class="item"><div class="pai"><img src="img/10.png" alt=""></div></div>
+                <div class="item"><div class="pai"><img src="img/10.png" alt=""></div></div>
+            </div>
+            <div class="txts">
+                <p class="pro-ti">加湿器-HHF-300</p>
+                <div class="freeTx">
+                    <p style="font-size: 16px;">该产品采用标准化、模块化的设计思路，应用基于全国产化材料和工艺的GaAs器件进行研制，结合公司成熟的微电子装联工艺及技术，在全频段内实现了较好的带内平坦度和输入输出驻波比。该产品还可内置温补衰减器，以实现宽温范围内较小的增益起伏，可满足电子侦察、电子对抗、测试测量等高性能射频/微波系统的超宽带、高可靠性及宽温度范围等的环境适应性需求。</p>
+                </div>
+            </div>
+        </div>
+        <div class="pro-special">
+            <p class="pro-ti">性能特点</p>
+            <div class="freeTx">
+                <p style="font-size: 16px;">超宽带应用：2~18GHz</p>
+                <p style="font-size: 16px;">良好的50Ω阻抗匹配：易于级联</p>
+                <p style="font-size: 16px;">满足军温工作条件：-55℃~+85℃</p>
+                <p style="font-size: 16px;">模块化、标准化设计：易于指标微调并降低研制成本</p>
+            </div>
+        </div>
+        <div class="pro-special">
+            <p class="pro-ti">使用注意事项</p>
+            <div class="freeTx">
+                <p style="font-size: 16px;">最大射频输入功率不超过10dBm</p>
+                <p style="font-size: 16px;">最大直流供电电压不超过6V</p>
+                <p style="font-size: 16px;">环境最高温度不超过+85℃</p>
+                <p style="font-size: 16px;">使用过程中应注意静电防护</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/page.js"></script> 
+<script>
+    $(function(){
+        $('.pro-detail-imgs').slick({
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    })
+</script>
+</body>
+</html>

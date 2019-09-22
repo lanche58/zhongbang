@@ -1,0 +1,34 @@
+.pbanner{
+    .txts{
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        top: 0;
+        bottom: 0;
+        color: #fff;
+    }
+    .ti1{
+        font-size: 20px;
+    }
+    .ti2{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .m{
+        display: none;
+    }
+    @media screen and (max-width:641px) {
+        .ti1{
+            font-size: 16px;
+        }
+        .ti2{
+            font-size: 24px;
+        }
+        .pic2 img{
+            display: none;
+        }
+        .pic2 .m{
+            display: block;
+        }
+    }
+}

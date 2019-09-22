@@ -1,0 +1,137 @@
+.pro-list{
+    a{
+        display: block;
+        background: $hc3;
+    }
+    .picbox{
+        width: 50%;
+        float: left;
+    }
+    .txts{
+        width: 50%;
+        padding: 12% 5% 0;
+        float: left;
+        text-align: center;
+        color: $fc3;
+    }
+    .pai{
+        padding-bottom: (496 / 600) * 100%;
+    }
+    .tx1, .tx2{
+        color: $mc1;
+    }
+    .tx1{
+        font-size: 36px;
+    }
+    .tx2{
+        margin-top: 3px;
+        font-size: 24px;
+    }
+    .tx3{
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .btn-wrap{
+        margin-top: 25px;
+    }
+    li{
+        &:nth-child(2n) {
+            .picbox{
+                float: right;
+            }
+        }
+        + li{
+            margin-top: 60px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .tx1{
+            font-size: 32px;
+        }
+        .tx2{
+            font-size: 20px;
+        }
+        .tx3{
+            font-size: 14px;
+        }
+        .pro-more{
+            width: 160px;
+        }
+        .txts{
+            padding-top: 11%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .tx1{
+            font-size: 28px;
+        }
+        .tx2{
+            font-size: 18px;
+        }
+        .tx3{
+            font-size: 12px;
+        }
+        .pro-more{
+            width: 140px;
+            height: 38px;
+            line-height: 36px;
+        }
+        .txts{
+            padding-top: 12%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .txts{
+            padding-top: 10%;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .txts, .picbox{
+            width: 100%;
+            float: none !important;
+        }
+        .txts{
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+        .tx1{
+            font-size: 32px;
+        }
+        .tx2{
+            font-size: 20px;
+        }
+        .tx3{
+            font-size: 14px;
+        }
+        li + li{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li + li{
+            margin-top: 20px;
+        }
+        .tx1{
+            font-size: 26px;
+        }
+        .tx2{
+            font-size: 18px;
+        }
+        .tx3{
+            font-size: 12px;
+        }
+        .txts{
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.pro-page{
+    padding: 80px 0 120px;
+    @media screen and (max-width:641px) {
+        padding: 45px 0 80px;
+    }
+    @media screen and (max-width:481px) {
+        padding-bottom: 60px;
+    }
+}

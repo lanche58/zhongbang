@@ -39,24 +39,13 @@ function pageBox() {
         isMobile = false;
     };
 
-    if(w_width <= 861){
-        var danNum=0;
-        $('.pnav ul').css('display','none');
-        $('.pnav').bind(_click,function(){
-            if(danNum==1){
-                $(this).removeClass('show');
-                $(this).find('ul').stop().fadeOut();
-                danNum = 0;
-            }else{
-                $(this).addClass('show');
-                $(this).find('ul').stop().fadeIn();
-                danNum = 1;
+    if (isMobile) {
+        $('.pnav li').each(function() {
+            var _act = $(this).find('a').hasClass('act');
+            if (_act) {
+                $('.pnav').scrollLeft($(this).position().left);
             }
         });
-    }else{
-        $('.pnav').removeClass('show');
-        $('.pnav ul').css('display','block');
-        $('.pnav').unbind(_click);
     }
 };
 
