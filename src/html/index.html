@@ -1,30 +1,29 @@
 @@include('./top.html')
 </head>
 <body>
-@@include('./header.html',{
-    "index": "act"
-})
-<div class="banner-box">
-    <div class="banner u-slick">
-        <div class="item"><a href="#">
-            <div class="pic2"><img src="img/banner1.jpg" alt=""></div>
-        </a></div>
+<div class="content">
+    <div index="1" id="s1" class="row rowh active">
+        <div class="pic2"><img src="img/22.jpg" alt=""></div>
+        <div class="ix-tx tac">
+            <p class="ti ti1">蒸发式加湿器</p>
+            <p class="ti ti2">自然蒸发加湿，无粉无雾</p>
+            <p class="ti ti3">防霉、除菌、除异味</p>
+            <div class="btn-wrap"><a href="#" class="btn pro-more">进一步了解&nbsp;&gt;</a></div>
+        </div>
+    </div>
+    <div index="2" id="s2" class="row rowh disappear">
+        <div class="pic2"><img src="img/23.jpg" alt=""></div>
+    </div>
+    <div index="3" id="s3" class="row rowh disappear">
+        <div class="pic2"><img src="img/24.jpg" alt=""></div>
+    </div>
+    <div index="4" id="s4" class="row disappear">
+        @@include('./footer.html')
+    </div>
+    <div id="boxsider">
+        @@include('./header.html')
     </div>
 </div>
-<!-- banner-box -->
-<div class="container">
-    
-</div>
-<!-- container -->
-@@include('./footer.html')
-<div class="vwrap">
-    <div class="videobtg"></div>
-    <div class="videobox">
-        <div id="videobox"></div>
-        <div class="close"><i></i></div>
-    </div>
-</div>
-<script src="js/video/player.mini.js"></script>
 <script src="js/page.js"></script>
 <script src="js/index.js"></script>
 </body>
