@@ -1,11 +1,50 @@
-.content{position:fixed;left:0;top:0;width:100%}
 .row{position:relative;overflow:hidden}
 .content{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .ix-tx{
         position: absolute;
         left: 5%;
         right: 5%;
         top: 74px;
+        padding-top: 4.2%;
+    }
+    .mtop{
+        height: 0 !important;
+    }
+    @media screen and (max-width:1024px) {
+        position: static;
+        padding-top: 60px;
+        .ix-tx{
+            top: 0;
+        }
+        .pic2{
+            position: static;
+        }
+    }
+    @media screen and (max-width:861px) {
+        background: $hc3;
+        .row + .row{
+            margin-top: 10px;
+        }
+        .ix-tx{
+            position: static;
+            background: #fff;
+            padding: 80px 5% 100px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ix-tx{
+            padding-top: (80 / 600) * 100vw;
+            padding-bottom: (100 / 600) * 100vw;
+        }
     }
 }
 
@@ -26,6 +65,34 @@
     .btn-wrap{
         margin-top: 25px;
     }
+    @media screen and (max-width:1366px) {
+        .ti1{
+            font-size: 38px;
+        }
+        .ti2{
+            font-size: 20px;
+        }
+        .ti3{
+            font-size: 14px;
+        }
+        .pro-more{
+            width: 152px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti1{
+            font-size: 28px;
+        }
+        .ti2{
+            font-size: 18px;
+        }
+        .pro-more{
+            width: 122px;
+            height: 38px;
+            line-height: 36px;
+            font-size: 12px;
+        }
+    }
 }
 
 #s1{
@@ -42,6 +109,18 @@
                     background: #fff;
                     color: $mc1;
                 }
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ix-tx{
+            color: $mc1; 
+            .ti3{
+                color: $fc3;
+            }
+            .pro-more{
+                border-color: $mc1;
+                color: $mc1;
             }
         }
     }

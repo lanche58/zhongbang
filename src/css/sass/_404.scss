@@ -1,0 +1,104 @@
+.sos-wrap{
+    @include bg;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sos-main{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    margin-top: -185px;
+    img{
+        vertical-align: bottom;
+    }
+    .sos-img{
+        width: 396px;
+        max-width: 100%;
+    }
+    .line{
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: $mc1;
+        margin: 50px auto 0;
+    }
+    .ib{
+        width: 114px;
+        height: 30px;
+        margin: 0 2px;
+        border: 1px solid $mc1;
+        line-height: 28px;
+        &:first-child{
+            background: $mc1;
+            color: #fff;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+                border-color: $mc2;
+                color: #fff;
+            }
+        }
+    }
+    .tx1{
+        margin-top: 30px;
+    }
+    .fib{
+        margin-top: 50px;
+    }
+    @media screen and (max-width:1366px) {
+        margin-top: -170px;
+        .line{
+            margin-top: 40px;
+        }
+        .tx1{
+            margin-top: 20px;
+        }
+        .fib{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        margin-top: 0;
+        transform: translateY(-50%);
+    }
+    @media screen and (max-width:481px) {
+        .line{
+            margin-top: (40 / 600) * 100vw;
+        }
+        .tx1{
+            margin-top: (20 / 600) * 100vw;
+        }
+        .fib{
+            margin-top: (40 / 600) * 100vw;
+        }
+        .ib{
+            width: 94px;
+            font-size: 12px;
+        }
+    }
+}
+
+.desc-img{
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    margin-left: -148px;
+    width: 296px;
+    @media screen and (max-width:1600px) {
+        bottom: 40px;
+    }
+    @media screen and (max-width:1366px) {
+        bottom: 20px;
+    }
+    @media screen and (max-width:1024px) {
+        margin-left: 0;
+        transform: translateX(-50%);
+        max-width: 60%;
+    }
+}
