@@ -1,10 +1,10 @@
 .sos-wrap{
-    @include bg;
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 
 .sos-main{
@@ -39,8 +39,8 @@
         }
         @media screen and (min-width:1025px) {
             &:hover{
-                background: $mc2;
-                border-color: $mc2;
+                background: $fc3;
+                border-color: $fc3;
                 color: #fff;
             }
         }
@@ -95,10 +95,15 @@
     }
     @media screen and (max-width:1366px) {
         bottom: 20px;
+        width: 236px;
+        margin-left: -118px;
     }
     @media screen and (max-width:1024px) {
         margin-left: 0;
         transform: translateX(-50%);
         max-width: 60%;
+    }
+    @media screen and (max-width:481px) {
+        width: 148px;
     }
 }

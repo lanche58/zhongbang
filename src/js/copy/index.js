@@ -129,6 +129,7 @@ $(document).ready(function(){
 		}
 	}
 	init();
+	$('#s1').addClass('active');
 
 	// $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
 	// 	$('.banner .item').first().addClass('ba-active');

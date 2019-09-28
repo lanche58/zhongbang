@@ -251,6 +251,7 @@
     </div>
 </div>
 @@include('./footer.html')
+<script src="js/plugin.js"></script>
 <script src="js/big.js"></script>
 <script src="js/page.js"></script>
 <script>
@@ -294,6 +295,18 @@
             var hash = $(this).attr('href').split('#')[1];
             if(hash){
                 e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtnav .ab').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $menuBtn.removeClass("active");
+                $menuBox.stop(false,false).animate({top:-100+"%"},function(){
+                    $(this).hide().removeClass('show');
+                });
+                navItem = 0;
                 $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
             }
         });
