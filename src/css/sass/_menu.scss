@@ -22,6 +22,19 @@
 
 .menuBox.show .navMobile dd { -webkit-transform: none; transform: none; opacity: 1; }
 
+.navMobile .thnav{
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: #ccc;
+        width: 50%;
+        @include now;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .menuBtn{ display: block; }
 }

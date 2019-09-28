@@ -64,6 +64,12 @@
         <dd><p><a href="pro.html">产品中心</a></p>
             <div class="mtnav">
                 <a href="pro.html">蒸发式加湿器</a>
+                    <div class="thnav">
+                        <a href="pro.html">HHF</a>
+                        <a href="pro.html">HVP</a>
+                        <a href="pro.html">HHP</a>
+                        <a href="pro.html">HVF</a>
+                    </div>
                 <a href="pro.html">空气净化器</a>
                 <a href="pro.html">直流电风扇</a>
             </div>
@@ -97,9 +103,9 @@
     </ul>
 </div>
 <div class="container">
-    <div class="ab1 pw" id="ab1">
-        <h3 class="news-ti tac">中邦是一家专注于<br>室内空气质量改善产品的研发与制造的企业</h3>
-        <div class="freeTx">
+    <div class="ab1 pw scroll-animation" id="ab1">
+        <h3 class="news-ti tac trans transY">中邦是一家专注于<br>室内空气质量改善产品的研发与制造的企业</h3>
+        <div class="freeTx trans transY dly-2">
             <p style="font-size: 16px;">中邦拥有20余年的产品开发经验和国内外一流的人才团队。其协同客户研发的空气净化器、直流静音电风扇和纯净型自然蒸发式加湿器获得了数十项国家发明和实用新型专利，其中蒸发式加湿器还获得了德国红点奖、IF奖、美国IDEA奖和日本G-Mark奖。</p>    
             <br>
             <p style="font-size: 16px;">中邦除了具备国际领先的工业设计理念外，其产品工程设计能力，更是中邦快速高效实现产品市场化的关键。在产业快速反应链上，中邦拥有精密模具设计与制造能力，配备了德国海克斯康的检测设备、日本MAKINO牧野加工中心（CNC）以及瑞士GF阿奇夏米尔电火花（EDM）等世界一流的设备，并有100余台120T～1000T的精密注塑成型机、产品装配流水线和检验测试设备。</p>
@@ -172,9 +178,9 @@
     </div>
     
     <div class="ab3 fixbg" id="ab3" style="background-image: url(img/20.jpg);">
-        <div class="pw">
-            <h3 class="news-ti tac">质量认证</h3>
-            <div class="honor-list honor-arrow u-slick">
+        <div class="pw scroll-animation">
+            <h3 class="news-ti tac trans transY">质量认证</h3>
+            <div class="honor-list honor-arrow u-slick trans transY dly-2">
                 <div class="item" data-href="img/16.jpg" data-size="202x285">
                     <p class="picbox"><span class="pai"><img src="img/16.jpg" alt=""></span></p>
                 </div>
@@ -198,10 +204,10 @@
     </div>
     
     <div class="ab4" id="ab4">
-        <div class="pw">
-            <h3 class="news-ti tac">核心能力</h3>
+        <div class="pw scroll-animation">
+            <h3 class="news-ti tac trans transY">核心能力</h3>
             <ul class="fib core-nav-list">
-                <li class="ib core-nav-item">
+                <li class="ib core-nav-item trans transY">
                     <div class="ico" style="background-image: url(images/2.png);"></div>
                     <div class="b">
                         <p class="ch">产品工业设计</p>
@@ -209,7 +215,7 @@
                     </div>
                     <span class="sj sj-b"></span>
                 </li>
-                <li class="ib core-nav-item">
+                <li class="ib core-nav-item trans transY">
                     <div class="ico" style="background-image: url(images/3.png);"></div>
                     <div class="b">
                         <p class="ch">精密模具</p>
@@ -217,7 +223,7 @@
                     </div>
                     <span class="sj sj-b"></span>
                 </li>
-                <li class="ib core-nav-item">
+                <li class="ib core-nav-item trans transY">
                     <div class="ico" style="background-image: url(images/4.png);"></div>
                     <div class="b">
                         <p class="ch">注塑成型</p>
@@ -225,7 +231,7 @@
                     </div>
                     <span class="sj sj-b"></span>
                 </li>
-                <li class="ib core-nav-item">
+                <li class="ib core-nav-item trans transY">
                     <div class="ico" style="background-image: url(images/5.png);"></div>
                     <div class="b">
                         <p class="ch">组装测试</p>
@@ -353,6 +359,9 @@
     $(function(){
         $('.his-main li').each(function(i, e) {
             $(this).css({ 'transition-delay': 200*i + 'ms' });
+        }); 
+        $('.core-nav-list li').each(function(i, e) {
+            $(this).css({ 'transition-delay': 200 + 200*i + 'ms' });
         }); 
         $('.honor-list').slick({
             slidesToShow: 4,

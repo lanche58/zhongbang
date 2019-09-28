@@ -64,6 +64,12 @@
         <dd><p><a href="pro.html">产品中心</a></p>
             <div class="mtnav">
                 <a href="pro.html">蒸发式加湿器</a>
+                    <div class="thnav">
+                        <a href="pro.html">HHF</a>
+                        <a href="pro.html">HVP</a>
+                        <a href="pro.html">HHP</a>
+                        <a href="pro.html">HVF</a>
+                    </div>
                 <a href="pro.html">空气净化器</a>
                 <a href="pro.html">直流电风扇</a>
             </div>
@@ -80,8 +86,8 @@
     <div class="cta-page">
         <div id="map"></div>
         <div class="cta2 pw">
-            <ul class="cta-list fib">
-                <li class="ib">
+            <ul class="cta-list scroll-animation fib">
+                <li class="ib trans transY">
                     <span class="icon iconfont icondianhua"></span>
                     <p class="ti">服务热线</p>
                     <p class="txx">
@@ -89,17 +95,17 @@
                         <a href="tel:02888451919" class="na">销售部电话：028-88451919</a>
                     </p>
                 </li>
-                <li class="ib">
+                <li class="ib trans transY">
                     <span class="icon iconfont icondizhi"></span>
                     <p class="ti">公司地址</p>
                     <p class="txx"><a href="#">四川省成都市经济开发区(龙泉驿区)东华路2号</a></p>
                 </li>
-                <li class="ib">
+                <li class="ib trans transY">
                     <span class="icon iconfont iconyouxiang"></span>
                     <p class="ti">电子邮箱</p>
                     <p class="txx"><a href="#">aimbon@aimbon.com</a></p>
                 </li>
-                <li class="ib">
+                <li class="ib trans transY">
                     <span class="icon iconfont iconchangyongtubiao-mianxing-"></span>
                     <p class="ti">公司传真</p>
                     <p class="txx">028-84876116</p>
@@ -155,6 +161,9 @@
         };
         var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
         ShowMap('104.018887,30.723201', k, '17');
+        $('.cta-list li').each(function(i, e) {
+            $(this).css({ 'transition-delay': 200*i + 'ms' });
+        }); 
     })
 </script>
 </body>
