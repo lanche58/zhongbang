@@ -26,9 +26,11 @@
 }
 
 .pro-more-hover:hover{
-    .pro-more{
-        background: $mc1;
-        color: #fff;
+    @media screen and (min-width:1025px) {
+        .pro-more{
+            background: $mc1;
+            color: #fff;
+        }
     }
 }
 

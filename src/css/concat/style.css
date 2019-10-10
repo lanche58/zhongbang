@@ -313,9 +313,10 @@
   color: #282828;
   transition: 300ms; }
 
-.pro-more-hover:hover .pro-more {
-  background: #282828;
-  color: #fff; }
+@media screen and (min-width: 1025px) {
+  .pro-more-hover:hover .pro-more {
+    background: #282828;
+    color: #fff; } }
 
 .pro-ti {
   line-height: 1.4;
@@ -608,15 +609,17 @@
 
 .f-cta p {
   float: left;
+  position: relative;
+  padding-left: 44px;
   margin-bottom: 10px;
   margin-right: 50px;
   line-height: 34px;
   font-size: 16px; }
 
 .f-cta .icon {
-  display: inline-block;
-  vertical-align: bottom;
-  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -634,6 +637,7 @@
 @media screen and (max-width: 641px) {
   .f-cta p {
     margin-right: 30px;
+    padding-left: 34px;
     font-size: 14px;
     line-height: 24px; }
   .f-cta .icon {
@@ -1517,25 +1521,17 @@
   overflow: hidden; }
 
 .content {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%; }
-  .content .pic2 {
-    position: absolute;
-    top: 0;
-    left: 0; }
+  padding-top: 74px; }
   .content .ix-tx {
     position: absolute;
     left: 5%;
     right: 5%;
-    top: 74px;
+    top: 0;
     padding-top: 4.2%; }
   .content .mtop {
     height: 0 !important; }
   @media screen and (max-width: 1024px) {
     .content {
-      position: static;
       padding-top: 60px; }
       .content .ix-tx {
         top: 0; }
@@ -1568,7 +1564,7 @@
     color: #999; }
   .ix-tx .btn-wrap {
     margin-top: 25px; }
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1600px) {
     .ix-tx .ti1 {
       font-size: 38px; }
     .ix-tx .ti2 {
@@ -1577,25 +1573,59 @@
       font-size: 14px; }
     .ix-tx .pro-more {
       width: 152px; } }
+  @media screen and (max-width: 1440px) {
+    .ix-tx .ti1 {
+      font-size: 32px; }
+    .ix-tx .ti2 {
+      margin-top: 8px;
+      font-size: 18px; }
+    .ix-tx .ti3 {
+      margin-top: 10px;
+      font-size: 14px; }
+    .ix-tx .pro-more {
+      width: auto;
+      height: auto;
+      line-height: 1.4;
+      border: none;
+      color: #0A9EBC; }
+    .ix-tx .btn-wrap {
+      margin-top: 20px; } }
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .ix-tx .pro-more-hover:hover .pro-more {
+      background: none;
+      color: #0A9EBC;
+      text-decoration: underline; } }
+  @media screen and (max-width: 1024px) {
+    .ix-tx .ti1 {
+      font-size: 28px; }
+    .ix-tx .ti2 {
+      margin-top: 6px;
+      font-size: 17px; }
+    .ix-tx .ti3 {
+      margin-top: 8px;
+      font-size: 13px; }
+    .ix-tx .pro-more {
+      font-size: 12px; }
+    .ix-tx .btn-wrap {
+      margin-top: 15px; } }
+  @media screen and (max-width: 861px) {
+    .ix-tx .ti1 {
+      font-size: 32px; }
+    .ix-tx .ti2 {
+      margin-top: 8px;
+      font-size: 18px; }
+    .ix-tx .ti3 {
+      margin-top: 10px;
+      font-size: 14px; }
+    .ix-tx .pro-more {
+      font-size: 14px; }
+    .ix-tx .btn-wrap {
+      margin-top: 20px; } }
   @media screen and (max-width: 481px) {
     .ix-tx .ti1 {
       font-size: 28px; }
     .ix-tx .ti2 {
-      font-size: 18px; }
-    .ix-tx .pro-more {
-      width: 122px;
-      height: 38px;
-      line-height: 36px;
-      font-size: 12px; } }
-
-@media screen and (max-width: 1366px) {
-  #s3 .pro-more {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff; } }
-
-@media screen and (min-width: 1025px) {
-  #s3 .pro-more:hover {
-    background: #282828; } }
+      font-size: 17px; } }
 
 #s1 .ix-tx {
   color: #fff; }
@@ -1604,10 +1634,13 @@
   #s1 .ix-tx .pro-more {
     border-color: #fff;
     color: #fff; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1441px) {
       #s1 .ix-tx .pro-more:hover {
         background: #fff;
         color: #282828; } }
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      #s1 .ix-tx .pro-more:hover {
+        text-decoration: underline; } }
 
 @media screen and (max-width: 861px) {
   #s1 .ix-tx {
@@ -1615,8 +1648,7 @@
     #s1 .ix-tx .ti3 {
       color: #999; }
     #s1 .ix-tx .pro-more {
-      border-color: #282828;
-      color: #282828; } }
+      color: #0A9EBC; } }
 
 .sos-wrap {
   position: absolute;

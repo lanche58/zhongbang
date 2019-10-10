@@ -1,26 +1,32 @@
-.row{position:relative;overflow:hidden}
+.row{ 
+    position:relative;
+    overflow:hidden;
+}
 .content{
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    .pic2{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    // 新添加
+    padding-top: 74px;
+    // position:fixed;
+    // left:0;
+    // top:0;
+    // width:100%;
+    // .pic2{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
     .ix-tx{
         position: absolute;
         left: 5%;
         right: 5%;
-        top: 74px;
+        // top: 74px;
+        top: 0;
         padding-top: 4.2%;
     }
     .mtop{
         height: 0 !important;
     }
     @media screen and (max-width:1024px) {
-        position: static;
+        // position: static;
         padding-top: 60px;
         .ix-tx{
             top: 0;
@@ -65,7 +71,8 @@
     .btn-wrap{
         margin-top: 25px;
     }
-    @media screen and (max-width:1366px) {
+    // news
+    @media screen and (max-width:1600px) {
         .ti1{
             font-size: 38px;
         }
@@ -79,35 +86,97 @@
             width: 152px;
         }
     }
+    @media screen and (max-width:1440px) {
+        .ti1{
+            font-size: 32px;
+        }
+        .ti2{
+            margin-top: 8px;
+            font-size: 18px;
+        }
+        .ti3{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .pro-more{
+            width: auto;
+            height: auto;
+            line-height: 1.4;
+            border: none;
+            color: $mc2;
+        }
+        .btn-wrap{
+            margin-top: 20px;
+        }
+    }
+    @media screen and (min-width:1025px) and (max-width:1440px) {
+        .pro-more-hover:hover .pro-more{
+            background: none;
+            color: $mc2;
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .ti1{
+            font-size: 28px;
+        }
+        .ti2{
+            margin-top: 6px;
+            font-size: 17px;
+        }
+        .ti3{
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .pro-more{
+            font-size: 12px;
+        }
+        .btn-wrap{
+            margin-top: 15px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ti1{
+            font-size: 32px;
+        }
+        .ti2{
+            margin-top: 8px;
+            font-size: 18px;
+        }
+        .ti3{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .pro-more{
+            font-size: 14px;
+        }
+        .btn-wrap{
+            margin-top: 20px;
+        }
+    }
     @media screen and (max-width:481px) {
         .ti1{
             font-size: 28px;
         }
         .ti2{
-            font-size: 18px;
-        }
-        .pro-more{
-            width: 122px;
-            height: 38px;
-            line-height: 36px;
-            font-size: 12px;
+            font-size: 17px;
         }
     }
 }
 
-#s3{
-    @media screen and (max-width:1366px) {
-        .pro-more{
-            background: rgba(0,0,0,.7);
-            color: #fff;
-        }
-    }
-    @media screen and (min-width:1025px) {
-        .pro-more:hover{
-            background: $mc1;
-        }
-    }
-}
+// #s3{
+//     @media screen and (max-width:1366px) {
+//         .pro-more{
+//             background: rgba(0,0,0,.7);
+//             color: #fff;
+//         }
+//     }
+//     @media screen and (min-width:1025px) {
+//         .pro-more:hover{
+//             background: $mc1;
+//         }
+//     }
+// }
 
 #s1{
     .ix-tx{
@@ -118,12 +187,23 @@
         .pro-more{
             border-color: #fff;
             color: #fff;
-            @media screen and (min-width:1025px) {
+            @media screen and (min-width:1441px) {
                 &:hover{
                     background: #fff;
                     color: $mc1;
                 }
             }
+            @media screen and (min-width:1025px) and (max-width:1440px) {
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            // @media screen and (min-width:10px) {
+            //     &:hover{
+            //         background: #fff;
+            //         color: $mc1;
+            //     }
+            // }
         }
     }
     @media screen and (max-width:861px) {
@@ -133,8 +213,8 @@
                 color: $fc3;
             }
             .pro-more{
-                border-color: $mc1;
-                color: $mc1;
+                // border-color: $mc1;
+                color: $mc2;
             }
         }
     }
