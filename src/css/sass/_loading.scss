@@ -245,6 +245,11 @@
             background: $mc1;
         }
     }
+    &.allow{
+        .dot{
+            cursor: pointer;
+        }
+    }
     .dot3, .dot1{
         position: absolute;
         top: 0;
@@ -405,6 +410,7 @@
     position: absolute;
     right: 40px;
     bottom: 75px;
+    transition: .6s;
     a{
         width: 92px;
         height: 30px;
@@ -423,7 +429,6 @@
     &.hide{
         transform: translateX(100%);
         @include hide;
-        transition: .6s;
     }
     @media screen and (max-width:1600px) {
         bottom: 55px;
